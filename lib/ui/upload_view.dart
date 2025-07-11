@@ -26,8 +26,8 @@ class _UploadViewState extends State<UploadView> {
     super.initState();
 
     // TODO: Here you can switch between the two http clients
-    // final httpClient = CupertinoHttpClient();
-    final httpClient = DartHttpClient();
+    final httpClient = CupertinoHttpClient();
+    // final httpClient = DartHttpClient();
     final remoteDatasource = FileUploadRemoteDatasource(httpClient);
     final repository = FileUploadRepository(remoteDatasource: remoteDatasource);
 
